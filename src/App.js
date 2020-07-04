@@ -26,9 +26,6 @@ export default function App() {
         </nav>
 
         <Switch>
-          <Route path='/'>
-            <h1>Home</h1>
-          </Route>
           <Route path='/signIn'>
             <h1>Sign In</h1>
           </Route>
@@ -43,6 +40,9 @@ export default function App() {
           </Route>
           <Route path='/manage/links'>
             <h1>Links</h1>
+          </Route>
+          <Route path='/'>
+            <h1>Home</h1>
           </Route>
         </Switch>
       </div>
