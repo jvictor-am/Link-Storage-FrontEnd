@@ -1,25 +1,32 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
+import Home from './screens/Home';
+import SignIn from './screens/SignIn';
+import SignUp from './screens/SignUp';
+import ManageLinks from './screens/Manage/Links';
+import ManageLinksCreate from './screens/Manage/Links/Create';
+import ManageLinksEdit from './screens/Manage/Links/Edit';
+
 export default function App() {
   return (
     <BrowserRouter>
       <div>
         <nav>
-          <ul>
-            <li>
+          <ul className='list-group list-group-horizontal'>
+            <li className='list-group-item'>
               <Link to='/signIn'>Sign In</Link>
             </li>
-            <li>
+            <li className='list-group-item'>
               <Link to='/signUp'>Sign Up</Link>
             </li>
-            <li>
+            <li className='list-group-item'>
               <Link to='/manage/links/create'>Create Link</Link>
             </li>
-            <li>
+            <li className='list-group-item'>
               <Link to='/manage/links/edit'>Edit Link</Link>
             </li>
-            <li>
+            <li className='list-group-item'>
               <Link to='/manage/links'>Links</Link>
             </li>
           </ul>
@@ -27,22 +34,22 @@ export default function App() {
 
         <Switch>
           <Route path='/signIn'>
-            <h1>Sign In</h1>
+            <SignIn />
           </Route>
           <Route path='/signUp'>
-            <h1>Sign Up</h1>
+            <SignUp />
           </Route>
           <Route path='/manage/links/create'>
-            <h1>Create Link</h1>
+            <ManageLinksCreate />
           </Route>
           <Route path='/manage/links/edit'>
-            <h1>Edit Link</h1>
+            <ManageLinksEdit />
           </Route>
           <Route path='/manage/links'>
-            <h1>Links</h1>
+            <ManageLinks />
           </Route>
           <Route path='/'>
-            <h1>Home</h1>
+            <Home />
           </Route>
         </Switch>
       </div>
