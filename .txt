@@ -1,0 +1,11 @@
+npx create-react-app frontend
+
+npm install --save react-router-dom
+
+npm install --save bootstrap
+
+npm install --save-dev node-sass
+
+npm install --save redux redux-promisse react-redux
+
+npm install--save axios
