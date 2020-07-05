@@ -9,3 +9,5 @@ npm install --save-dev node-sass
 npm install --save redux redux-promisse react-redux
 
 npm install--save axios
+
+npm install --save universal-cookie
