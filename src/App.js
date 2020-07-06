@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './screens/Home';
 import SignIn from './screens/SignIn';
@@ -19,7 +19,7 @@ const App = ({ initAccount }) => {
   return (
     <BrowserRouter>
       <div>
-        <nav>
+        {/* <nav>
           <ul className='list-group list-group-horizontal'>
             <li className='list-group-item'>
               <Link to='/signIn'>Sign In</Link>
@@ -37,7 +37,7 @@ const App = ({ initAccount }) => {
               <Link to='/manage/links'>Links</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <Switch>
           <Route path='/signIn'>
