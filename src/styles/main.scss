@@ -22,6 +22,20 @@
   border-color: rgba(0, 0, 0, 0) !important;
 }
 
+.color {
+  font-weight: bold;
+  text-decoration-color: red;
+  border: 1px solid red;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.position {
+  padding: 0 10px;
+}
+
 .float-center {
   // position: absolute;
   position: absolute;

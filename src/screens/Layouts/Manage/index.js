@@ -19,7 +19,7 @@ const Layout = ({ children, signOutAction, account }) => {
       <nav className='navbar navbar-expand-lg bg-primary text-light'>
         <div className='container d-flex w-100 justify-content-between'>
           <div>
-            <span>BACK</span>
+            <span>Back</span>
           </div>
           <div className='text-center'>
             <strong>Links</strong>

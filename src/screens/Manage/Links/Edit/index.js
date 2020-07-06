@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Layout from '../../../Layouts/Manage';
 import FormGroup from '../../../../components/FormGroup';
 import FormCheck from '../../../../components/FormCheck';
@@ -32,7 +32,9 @@ const Edit = ({ link, linkGet, linkUpdate }) => {
 
           <FormCheck label='Is Social' name='isSocial' data={link} />
           <div>
-            <button className='btn btn-primary btn-round'>Submit</button>
+            <Link to='/manage/links'>
+              <button className='btn btn-primary btn-round'>Submit</button>
+            </Link>
           </div>
         </form>
       </div>

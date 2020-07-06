@@ -42,8 +42,10 @@ const Links = ({
 
             const border =
               linkToRemove && linkToRemove.id === link.id
-                ? 'border border-danger rounded'
+                ? 'border-danger rounded color'
                 : 'border border-transparent';
+            // ? 'border border-danger rounded'
+            // : 'border border-transparent';
 
             return (
               <div
@@ -58,8 +60,13 @@ const Links = ({
                   <span className='text-primary clearfix'>{link.url}</span>
                 </div>
                 <div className='ml-auto p-2 clearfix'>
-                  <Link to={`/manage/links/edit/${link.id}`}>Edit</Link>
-                  <button className='btn btn-clear' onClick={deleteClick}>
+                  <button className='btn btn-clear link a'>
+                    <Link to={`/manage/links/edit/${link.id}`}>Edit</Link>
+                  </button>
+                  <button
+                    className='btn btn-clear position'
+                    onClick={deleteClick}
+                  >
                     Delete
                   </button>
                 </div>
